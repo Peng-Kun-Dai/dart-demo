@@ -52,10 +52,23 @@ void main() {
     var isPublic = true;
     var visibility = isPublic ? 'public' : 'private';
     print(visibility);
+
+    String playerName(String? name) => name ?? 'Guest';
+
+    String playerName2(String? name) {
+      if (name == null) {
+        return 'Guest';
+      } else {
+        return name;
+      }
+    }
+  }
+  {
+    // var paint =Paint()
   }
 
   {
     // var paint = Paint()
-        // ...color =Colors.black
+    // ...color =Colors.black
   }
 }

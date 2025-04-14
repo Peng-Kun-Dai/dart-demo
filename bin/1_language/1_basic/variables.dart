@@ -39,14 +39,26 @@ void main() {
   }
   {
     //延迟初始化
+    // 当您将变量标记为 late 但在其声明处对其进行初始化时，则在第一次使用该变量时运行初始化程序。这种延迟初始化在以下几种情况下非常方便：
+    // 可能不需要该变量，并且初始化该变量的成本很高。
+    // 您正在初始化实例变量，并且其初始化程序需要访问this
     // late String temperature = readThermometer();
   }
   {
     //如果您不打算更改变量，请使用 final 或 const ，替换 var 或添加到类型中。
     // final 变量只能设置一次；
     // const 变量是编译时常量。（ const 变量隐式为 final 。）
+
+    // 虽然不能修改 final 对象，但可以更改其字段。
+    // 相比之下，不能更改 const 对象及其字段：它们是 不可变的 。
     final name = 'Bob';
     final String nickname = 'Bobby';
+
+    {
+      final Object personal;
+      personal = (name: 'jayce', age: 22);
+      // personal.na
+    }
 
     {
       final name1;
