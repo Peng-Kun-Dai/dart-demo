@@ -4,6 +4,12 @@ class Television {
     turnOn();
   }
 
+  @Deprecated('xxx')
+  // @deprecated
+  @override
+  @pragma('xxx')
+  @Todo("x", 'x')
+
   void turnOn() {}
 }
 

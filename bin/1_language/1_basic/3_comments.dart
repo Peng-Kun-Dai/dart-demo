@@ -1,7 +1,9 @@
 void main() {
+  //单行注释
   // TODO: 重构为 AbstractLlamaGreetingFactory？
   print('欢迎来到我的羊驼农场！');
 
+  //多行注释
   /*
    * 这是很多工作。考虑养鸡。
 
@@ -16,6 +18,7 @@ class Food {}
 
 class Activity {}
 
+//文档注释
 /// 一种驯养的南美骆驼科动物（羊驼）。
 ///
 /// 安第斯文化自前西班牙时代以来就一直将羊驼用作肉类和驮畜。

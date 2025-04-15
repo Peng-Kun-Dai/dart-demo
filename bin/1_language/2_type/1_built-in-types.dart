@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:characters/characters.dart';
 
 void main() {
+  //int double
   {
     int a;
     a = 10;
@@ -46,7 +47,9 @@ void main() {
     var n3 = 0x00_14_22_01_23_45;
     var n4 = 555_123_4567;
     var n5 = 100__000_000__000_000;
-
+  }
+  //String
+  {
     var s = 'string interpolation';
     assert(
       'Dart has $s,which is very handy.' ==
@@ -97,7 +100,9 @@ void main() {
     const aConstList = [1, 2, 3];
 
     const validConstString = '$aConstNum $aConstBool $aConstString';
-
+  }
+  //bool
+  {
     var fullName = '';
     assert(fullName.isEmpty);
     var hitPoints = 0;
@@ -107,11 +112,16 @@ void main() {
     var iMeantToDoThis = 0 / 0;
     assert(iMeantToDoThis.isNaN);
   }
+  //char
+  {
+    var hi = 'Hi 🇩🇰';
+    print(hi);
+    print('\u2665');
+    print('The end of the string: ${hi.substring(hi.length - 1)}');
+    print('The last character: ${hi.characters.last}');
+  }
+  //symbol
+  {
 
-  var hi = 'Hi 🇩🇰';
-  print(hi);
-  print('The end of the string: ${hi.substring(hi.length - 1)}');
-  print('The last character: ${hi.characters.last}');
-
-
+  }
 }
